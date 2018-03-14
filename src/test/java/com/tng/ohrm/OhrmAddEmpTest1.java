@@ -18,6 +18,7 @@ public class OhrmAddEmpTest1 {
 	public void openApplication() {
 
 		driver = DriverFactory.getDriver("chrome");
+		System.out.println("This is my first change");
 		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
